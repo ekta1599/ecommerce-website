@@ -12,7 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cors());
 app.use(morgan("tiny"));
 
-app.get("/", (req, res) => {
+app.get("/hi", (req, res) => {
     res.status(200).json({ message: "Initial Route Working!!" });
 });
 
